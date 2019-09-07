@@ -1,0 +1,25 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <script>
+
+            let students=[
+                {name:'sasi',contact:'0112456892'},
+                {name:'sasi',contact:'0112456892'},
+                {name:'sasi',contact:'0112456892'},
+                {name:'sasi',contact:'0112456892'},
+                {name:'sasi',contact:'0112456892'}
+        ]
+        console.log(students);
+            document.write("<table border=1");
+            document.write("<tr><th>Name </th><th>Contact Numbers></th></tr>");  
+        students.forEach(function(student){
+      document.write(`<tr><td>${student.name}</td><td>${student.contact}</td></tr>`)
+        })
+        document.write("</table>");
+            
+            </script>
+    </body>
+</html>

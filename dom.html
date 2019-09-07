@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <label>Enter number one:</label>
+    <input type="text/" id="txt1">
+    <label> Enter number one:</label>
+    <input type="text/" id="txt2">
+
+    <button onclick="addnumber()"> add</button>
+
+    <script>
+        function addnumber() {
+            let num1 =eval(document.getElementById("txt1").value);     //DOM function getElemetById
+            let num2 =Number(document.getElementById("txt2").value);    //eval or Number
+            let ans = num1+ num2;
+            alert ("Anser is"+ans)                         
+           // alert("Hi")
+        }
+    </script>
+
+</body>
+
+</html>

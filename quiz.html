@@ -1,0 +1,34 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <script>
+
+            let questions=[
+                {question:'Who is the owner of facebook',answer :["Billgates","zukerberg","Yaro"],cans:'zukerberg'},
+                {question:'Who is the owner of google',answer :["Billgates1","zukerberg1","sundar"],cans:'sundar'},
+
+        ]
+        console.log(questions);
+            document.write("<table border=1");
+            document.write("<tr><th>Name </th><th>Contact Numbers></th></tr>");  
+        for (let i=0; i<questions.length; i++){
+            {
+                    document.write("<tr>");
+                    document.write(`<td>${questions[i].question} </td>`);       //ES6 method 
+                    for (let j=0;j<3;j++){
+
+                    }
+
+                    
+                    document.write(`<td>${questions[i].answer[]} </td>`);
+                    document.write("</tr>");}
+                    document.write();
+        }
+
+        document.write("</table>");
+            
+            </script>
+    </body>
+</html>

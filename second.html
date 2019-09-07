@@ -1,0 +1,61 @@
+<htm>
+    <head>
+     
+    </head>
+    <body>
+        <pre>
+            <script>
+                let num1=10; // using for local variables but var used for public variables
+                document.writeln(num1);
+                num1=23;           
+                document.writeln(num1);
+
+                const num2=12;
+                document.writeln(num2);
+               // num2=25;
+                document.writeln(num2); //cant assign const as other number
+                
+                let num3=10;
+                let num4=12;
+
+                tot = num1+num2;
+                document.writeln("Total is :"+tot)
+
+                let marks=55;
+
+                if (marks>40){
+                    document.writeln("You pass")
+                }
+                else {
+                    document.writelnO("You fail")
+                }
+             //let i =10;
+             
+                for (let i=0;i<10;i++){
+                    for(let j=0 ; i>j; j++){
+                        document.writeln("*")
+                    }
+                    document.writeln()
+                }
+                
+                </script>
+
+        </pre>
+        <script>
+        for (let i=0;i<10;i++){
+                    for(let j=0; i>j; j++){
+                        document.writeln("*");
+                    }
+                    document.writeln();
+                }
+
+        document.write("table border=1");
+        for (let i=0;i<10;i++){
+            document.write("<tr>");
+                document.write("<td> Apple </td>");
+                document.write("</tr>");
+        } 
+        document.write("</table>")       
+        </script>
+    </body>
+</htm>

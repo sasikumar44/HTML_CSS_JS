@@ -1,0 +1,46 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <script>
+
+            let students=[
+                {name:'sasi',maths:80,science:70,ict:78},
+                {name:'sasi',maths:25,science:40,ict:78},
+                {name:'sasi',maths:87,science:30,ict:58},
+                {name:'ravi',maths:98,science:60,ict:78},
+                {name:'mathu',maths:83,science:56,ict:79},
+                
+        ]
+        console.log(students);
+
+ /*       var avg = Array.from(students.reduce(
+        (acc, obj) => Object.keys(obj).reduce( 
+            (acc, key) => typeof obj[key] == "number"
+                ? acc.set(key, (acc.get(key) || []).concat(obj[key]))
+                : acc,
+        acc),
+    new Map())).reduce( 
+        (acc, [name, values]) =>
+            Object.assign(acc, { [name]: values.reduce( (a,b) => a+b ) / values.length }),
+        {}
+    );
+
+console.log(avg)
+document.write(avg);   */
+        
+
+
+            document.write("<table border=1");
+            document.write("<tr><th>Name </th><th>Maths </th><th>Science </th><th>ICT </th><th>Total </th><th>Average</th></tr>");  
+        students.forEach(function(student){
+      document.write(`<tr><td>${student.name}</td><td>${student.maths}</td><td>${student.science}</td><td>${student.ict}</td>
+        <td>${student.maths+student.science+student.ict}</td>
+        </tr>`)
+        })
+        document.write("</table>");
+            
+            </script>
+    </body>
+</html>

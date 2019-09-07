@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        body {
+            text-align :center;
+        }
+    #calculator{
+        margin :auto;
+        padding-top:30px;
+        padding-left:30px; 
+        height :300px;
+        width :400px;
+        background-color: hsl(46, 94%, 51%);
+        border-radius: 30px;
+        border:5px dotted blue; 
+
+    }
+    #calculator .btn{
+        margin-left: 10%;
+        margin-right: auto;
+        margin-top: 20%;
+        width:50%;
+    }
+
+    </style>
+</head>
+
+<body >
+    <div id="calculator">
+
+<form name="calculator" onsubmit="return calFunction();">
+    <br>
+    <label>Enter number one:</label>
+    <input type="text" id="txt1" name="num1">
+    <br>
+    <label> Enter number one:</label>
+    <input type="text" id="txt2" name="num2">
+    
+    <br>
+    <input type="radio" name="function" value="add" > Add<br>
+   <input type="radio" name="function" value="sutract"> Sutract<br>
+   <input type="radio" name="function" value="multiply"> Multiply<br>
+   <input type="radio" name="function" value="divide"> Divide<br>
+   <input type="submit" value="Answer" class="btn"/>
+  
+</form>
+</div>
+
+<script>
+ function calFunction (){
+     let num1= Number(document.forms["calculator"]["num1"].value);
+     let num2= Number(document.forms["calculator"]["num2"].value);
+     let input = (document.forms["calculator"]["function"].value);
+     
+     let answer = null;
+     if (input == "add"){
+         answer = num1+num2;
+         alert("Answer when added is "+answer);
+     }else if (input =="sutract"){
+        answer = num1-num2;
+        alert("Answer when sutracted is "+answer);
+     }else if(input =="multiply"){
+        answer=num1*num2;
+        alert("Answer when multiplied is "+answer);
+     }else if (input == "divide"){
+        answer=num1/num2;
+        alert("Answer when divided is "+answer);
+     }
+ return false;
+ }
+
+</script>
+
+
+</body>
+
+</html>

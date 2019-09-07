@@ -1,0 +1,31 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <script>
+
+            let students=[
+                {name:'sasi',contact:'0112456892'},
+                {name:'sasi',contact:'0112456892'},
+                {name:'sasi',contact:'0112456892'},
+                {name:'sasi',contact:'0112456892'},
+                {name:'sasi',contact:'0112456892'}
+        ]
+        console.log(students);
+            document.write("<table border=1");
+            document.write("<tr><th>Name </th><th>Contact Numbers></th></tr>");  
+        for (let i=0; i<students.length; i++){
+            {
+                    document.write("<tr>");
+                    document.write(`<td>${students[i].name} </td>`);       //ES6 method 
+                    document.write(`<td>${students[i].contact} </td>`);
+                    document.write("</tr>");}
+                    document.write();
+        }
+
+        document.write("</table>");
+            
+            </script>
+    </body>
+</html>

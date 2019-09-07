@@ -1,0 +1,42 @@
+<html>
+    <head>
+
+    </head>
+    <bady>
+        <script>
+            document.write("<table border=1");
+            for (let i=0;i<10;i++){
+
+                if (i%2==0 ){
+                    document.write("<tr>");
+                    document.write("<td bgcolor='yellow' > Apple </td>");
+                    document.write("</tr>");
+                }else {
+                    document.write("<tr>");
+                    document.write("<td> Apple </td>");
+                    document.write("</tr>");
+
+                }
+            } 
+            document.write("</table>") 
+            
+            document.write("<table border=1");
+            for (let i=0;i<10;i++){
+            let color = 'gray';
+                if (i%2==0 ){
+                 color ='yellow';
+                }
+                    document.write("<tr>");
+                    document.write("<td bgcolor= +color+ > Apple </td>");
+                    document.write("<td bgcolor= ${color}> Apple </td>");
+                    
+                    //ES6 techniques
+                    document.write("</tr>");
+
+            
+            } 
+            document.write("</table>") 
+
+            </script>
+    </bady>
+</html>
