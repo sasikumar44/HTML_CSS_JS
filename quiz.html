@@ -3,32 +3,34 @@
 
     </head>
     <body>
+
+        <div id="qarea">
+
+        </div>
         <script>
 
             let questions=[
-                {question:'Who is the owner of facebook',answer :["Billgates","zukerberg","Yaro"],cans:'zukerberg'},
-                {question:'Who is the owner of google',answer :["Billgates1","zukerberg1","sundar"],cans:'sundar'},
+                {question:'Who is the owner of facebook',answer :["Billgates","zukerberg","Yaro"],value:0},
+                {question:'Who is the owner of google',answer :["Billgates1","zukerberg1","sundar"],value:0}
 
         ]
-        console.log(questions);
-            document.write("<table border=1");
-            document.write("<tr><th>Name </th><th>Contact Numbers></th></tr>");  
-        for (let i=0; i<questions.length; i++){
-            {
-                    document.write("<tr>");
-                    document.write(`<td>${questions[i].question} </td>`);       //ES6 method 
-                    for (let j=0;j<3;j++){
+       // console.log(questions);
+      let questionStr=`<ol>`; 
+        questions.forEach(function(question){
+            let optionstr= "<u";
+            question.answer.forEach(function(answer, value)){
 
-                    }
+                `<li><input type='radio' name='option' value=${value} /> ${option}</li>`
+            }
+          questionStr = questionStr + ` <li>
+                ${question.question}
+                ${option}
+                </li>  `   
 
-                    
-                    document.write(`<td>${questions[i].answer[]} </td>`);
-                    document.write("</tr>");}
-                    document.write();
-        }
+        });
+        questionStr =questionStr +`</ol>`;
 
-        document.write("</table>");
-            
+        document.getElementById("qarea").innerHTML=questionStr;
             </script>
     </body>
 </html>
